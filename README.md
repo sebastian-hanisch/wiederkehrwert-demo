@@ -1,7 +1,6 @@
 # Wiederkehrwert: was „100 Jahre“ heißt und wie sicher man ihn kennt – Streamlit-Demo
 
-<!-- TODO nach dem Deploy: direkt hierher den Live-Link setzen (Leerzeile davor und danach):
-**[→ Demo live ausprobieren](https://sebastianhanisch-wiederkehrwert-demo.streamlit.app/)** -->
+**[→ Demo live ausprobieren](https://sebastianhanisch-wiederkehrwert-demo.streamlit.app/)**
 
 Demo der Linie **„Extremwerte erklärt“** in der „Konzepte“-Reihe der Website „Sebastian Hanisch – Operations Research und Machine Learning“ (Bereich Statistik, Feld „Seltenes und Extremes“). Sie setzt voraus, dass die Parameter (μ, σ, ξ) aus Blockmaxima geschätzt werden (Gegenstand der Demo „GEV an Blockmaxima“), und hebt die Annahme „der angepasste Pegel ist **die** Zahl“ auf: er ist eine Zufallsgröße mit **Streuband**, ein nominell 95-%-Intervall hält sein Versprechen bei kurzen Reihen oft **nicht** (Delta: in allen 13 gemessenen Zellen unter 95 %; Profil: bei m = 20 zwischen 92,4 % und 94,5 %, sonst zwischen 93,5 % und 95,9 %), und die Wiederkehrperiode ist ein **Mittel, keine Frist**. Danach folgt in der Linie die Demo „Überschreitungen und die GPD“ mit der Gabelung „Block gegen Schwelle“. Die Blöcke sind **ausgedacht**: GEV direkt aus der Extremwertverteilung gezogen, oder das Jahresmaximum aus 365 Tageswerten von Exponential- und Normalverteilung, oder das Tagesmaximum aus 100 Containern eines erfundenen Verweilzeit-Modells („Vehikel B“). Zähleinheiten stehen an jeder Zahl: **Läufe** (unabhängige Wiederholungen eines ganzen Experiments mit m Blöcken), **Reihen** (dasselbe bei den exakten Zahlen), **Blöcke** (m) und **Jahre** (T, N; ein Block ist ein Jahr).
 
