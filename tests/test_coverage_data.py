@@ -61,7 +61,7 @@ def test_streuband_quantile_geordnet_und_anteile_in_0_1(cov):
 
 def test_sigma_bekannt_robuste_streuung_gleich_exakt(cov):
     block = cov["streuband"]["sigma_bekannt_robuste_streuung"]
-    lo, hi = RL.gumbel_fehler_band(50, 0.25, 0.75)                                                             # Viertelspanne des Fehlers in Einheiten σ
+    lo, hi = RL.gumbel_fehler_band(50, 0.25, 0.75)                                                             # Interquartilsabstand des Fehlers in Einheiten σ
     exakt = (hi - lo) / 1.349
     for T, wert in block["werte"].items():
         assert wert == pytest.approx(exakt, rel=0.08)                                                          # Simulation (2 000 Läufe) gegen Gamma-Rechnung

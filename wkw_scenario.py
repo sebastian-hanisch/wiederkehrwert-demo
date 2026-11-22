@@ -3,7 +3,7 @@
 Alle Blöcke sind ausgedacht (kein Echtdatenbezug). Zufall nur aus `wkw_rng.SplitMix64` (reine Vorlage, auf jeder Plattform dieselben Zahlen); Logarithmen über `exact_log`.
 Fälle:
 * `gev`:        Blöcke direkt aus GEV(μ, σ, ξ) per Inversion; wahrer Pegel = GEV-Quantil (exakt).
-* `exp365`:     Jahresmaximum aus n = 365 Exponential(1)-Tageswerten; wahrer Pegel exakt aus F^365 (die GEV ist hier nur Grenzgesetz).
+* `exp365`:     Jahresmaximum aus n = 365 Exponential(1)-Tageswerten; wahrer Pegel exakt aus F^365 (die GEV ist hier nur die Grenzverteilung).
 * `normal365`:  Jahresmaximum aus 365 Normal(0, 1)-Tageswerten; wahrer Pegel exakt aus Φ^365.
 * `vwz`:        Vehikel B: Tagesmaximum aus 100 Containern der Verweilzeit-Mischung (Tabelle `wkw_vehikel_b_tabelle.json`); wahrer Pegel exakt aus F^100.
 Bei den drei letzten Fällen wird je Block ein Zug aus F^n durch Umkehrung gezogen (ein Zug je Jahr statt 365 Tageswerten)."""

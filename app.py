@@ -64,7 +64,7 @@ with st.container(key="kopf"):
 st.markdown(
     """
 Die **Wiederkehrperiode** eines 100-Jahres-Werts ist ein **Mittel, keine Frist**: T sagt, wie oft ein Pegel im Mittel überschritten wird, nicht wann. Wird der Pegel aus
-einer Reihe von Jahresmaxima **geschätzt**, ist er keine feste Zahl, sondern eine Zufallsgröße mit **Streuband**, und ein nominell 95-%-**Intervall** hält sein Versprechen bei kurzen Reihen oft nicht. Diese Demo zeigt
+einer Reihe von Jahresmaxima **geschätzt**, ist er keine feste Zahl, sondern eine Zufallsgröße mit **Streuband**, und ein nominell 95-%-**Konfidenzintervall** hält sein Versprechen bei kurzen Reihen oft nicht. Diese Demo zeigt
 das an ausgedachten Blöcken, mit **Zähleinheit** an jeder Zahl (Läufe, Reihen, Blöcke, Jahre; ein Block ist ein Jahr). Unten stehen vier Experimente, dann **🚧 Wo die Annahmen enden**
 und der Expander **📐 Mathematische Formulierung**. Wer die Frage zuerst ohne Fachbegriffe verstehen will, öffnet „💬 In einfachen Worten“.
 """
@@ -326,7 +326,7 @@ with st.expander("📐 Mathematische Formulierung"):
 |---|---|
 | $\mu,\ \sigma>0,\ \xi$ | Ort, Skala und Form der GEV (ξ > 0 Fréchet-Typ, ξ = 0 Gumbel, ξ < 0 Weibull-Typ mit endlichem Rand) |
 | $T,\ p=1/T$ | Wiederkehrperiode (Mittel der Wartezeit) und Überschreitungswahrscheinlichkeit je Jahr |
-| $x_T$ | Pegel (Wiederkehrwert): $G(x_T)=1-1/T$ |
+| $x_T$ | Pegel (Wiederkehrwert, englisch Return Level): $G(x_T)=1-1/T$ |
 | $m,\ N$ | Länge der Reihe in Jahren, Nutzungsdauer in Jahren |
 | $\ell(\theta)$ | Log-Likelihood, $\theta=(\mu,\ln\sigma,\xi)$ |
 

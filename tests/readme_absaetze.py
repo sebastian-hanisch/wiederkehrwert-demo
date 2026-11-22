@@ -41,7 +41,7 @@ def absatz_streuband():
         f"- **Zu 90 % zwischen:** ξ = 0,2, m = 50: der 100er-Wert zwischen dem {de(a['q05'], 2)}- und {de(a['q95'], 2)}-Fachen, der 1000er-Wert zwischen {de(a1000['q05'], 2)} und {de(a1000['q95'], 2)}, "
         f"in {pct(a1000['ueber_2'])} der Läufe mehr als doppelt so hoch und in {pct(a1000['unter_08'])} unter dem 0,8-Fachen (T = 1000); bei m = 500 sind es {de(z['xi+0.2_m500_T100']['q05'], 2)} bis {de(z['xi+0.2_m500_T100']['q95'], 2)} (T = 100).\n"
         f"- **Das Band hängt nicht nur an T/m:** bei T/m = 2 ist q95/q05 für m = 50, T = 100 gleich {de(a['q95'] / a['q05'], 2)}, für m = 500, T = 1000 gleich {de(b['q95'] / b['q05'], 2)} (ξ = 0,2).\n"
-        f"- **Die Extrapolation kostet wegen der geschätzten Parameter** (ξ = 0, m = 50, Streuung des Fehlers in Einheiten σ, robust als Viertelspanne/1,349, 2 000 Läufe): für T = 10 / 100 / 1000 "
+        f"- **Die Extrapolation kostet wegen der geschätzten Parameter** (ξ = 0, m = 50, Streuung des Fehlers in Einheiten σ, robust als Interquartilsabstand/1,349, 2 000 Läufe): für T = 10 / 100 / 1000 "
         f"GEV mit drei freien Parametern {de(g10['gev_frei'], 3)} / {de(g['gev_frei'], 3)} / {de(g1000['gev_frei'], 3)}, Gumbel mit freiem (μ, σ) {de(g10['gumbel_mu_sigma_frei'], 3)} / {de(g['gumbel_mu_sigma_frei'], 3)} / {de(g1000['gumbel_mu_sigma_frei'], 3)}, "
         f"σ bekannt {de(sk['10'], 3)} / {de(sk['100'], 3)} / {de(sk['1000'], 3)} (exakt {de((hi - lo) / 1.349, 3)}). Streuungen aus den Läufen mit ξ = 0,2 und m = 20 werden von Ausreißern bestimmt, darum steht oben das Quantilband."
     )
